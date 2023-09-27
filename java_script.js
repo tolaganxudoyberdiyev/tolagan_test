@@ -21,6 +21,11 @@ questions = [
 
     },
 
+   { 
+    question: 'Gullar SHahri  O`zbekistonning Qaysi viloyatida joylashgann  ',
+        answers: ['a: Samarqand',"b:Toshkent", 'c:Namangan', 'd:Farg`onada'],
+        result: 'c'
+   }
 ]
 
 let correctAnswer = 0;
@@ -28,33 +33,39 @@ let correctAnswer = 0;
 for (let index = 0; index < questions.length; index++) {
 
     let answe = prompt(questions[index].question + "\n" + questions[index].answers.join("\n"));
-let userAnswers;
-    if (userAnswers == questions[index].result) {
+
+// let userAnswers;
+
+    if (answe == questions[index].result) {
         correctAnswer++;
     }
-    else if (userAnswers === "question") {
+    else if (answe === "question") {
         break;
     }
-    else if (userAnswers === "new") {
+    else if (answe === "new") {
         continue;
     }
 
-    else if (userAnswers == "" || userAnswers == null) {
+    else if (answe == "" || answe == null)
+     {
         alert("Siz variant belgilamadingiz");
     }
 
    
 
 }
+
 alert("Siz " + questions.length + " ta savoldan " + correctAnswer + " ta to'gri bajardingiz.");
 
 
-if (correctAnswer >= questions.length - 3) {
+if (correctAnswer >= questions.length - 3)
+ {
     alert(" Siz bu testni to'g'ri bajardingiz");
 }
 
 
-else if (correctAnswer == questions.length - 5 < questions.length - 3) {
+else if (correctAnswer == questions.length - 5 < questions.length - 3)
+ {
     alert("  Siz  bu testni 45% bajardingiz.");
 }
 

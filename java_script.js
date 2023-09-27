@@ -25,6 +25,13 @@ questions = [
     question: 'Gullar SHahri  O`zbekistonning Qaysi viloyatida joylashgann  ',
         answers: ['a: Samarqand',"b:Toshkent", 'c:Namangan', 'd:Farg`onada'],
         result: 'c'
+   },
+
+   
+   { 
+    question: 'O`zbekiston Respublikasining birinchi prezidenti kim? ',
+        answers: ['a: SH.Mirziyoyev',"b:I. Karimov", 'c:A.Aripov', 'd:T.Xudoyberdiyev'],
+        result: 'b'
    }
 ]
 
